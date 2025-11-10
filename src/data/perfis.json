@@ -1,0 +1,95 @@
+[
+  {
+    "id": 1,
+    "nome": "Leandro Junior",
+    "foto": "https://github.com/TLean07.png",
+    "cargo": "Engenheiro de Software",
+    "resumo": "Especialista em React, Node.js e soluções de nuvem.",
+    "localizacao": "São Paulo/SP",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["React", "TypeScript", "Node.js", "AWS","Java","JavaScript","MongoDB","Firebase","Python"],
+    "softSkills": ["Comunicação", "Liderança", "Resolução de Problemas"],
+    "experiencias": [
+      {
+        "empresa": "N/A",
+        "cargo": "N/A",
+        "inicio": "N/A",
+        "fim": "N/A",
+        "descricao": "N/A"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia de Software",
+        "instituicao": "FIAP",
+        "ano": 2028
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["AWS Certified Developer"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" },{ "idioma": "Português", "nivel": "Fluente" }],
+    "areaInteresses": ["IA", "Fintech"]
+  },
+  {
+    "id": 2,
+    "nome": "Maria Silva",
+    "foto": "https://i.pravatar.cc/150?img=47",
+    "cargo": "UX/UI Designer",
+    "resumo": "Focada em criar experiências de usuário intuitivas.",
+    "localizacao": "Curitiba/PR",
+    "area": "Design",
+    "habilidadesTecnicas": ["Figma", "Adobe XD", "User Research"],
+    "softSkills": ["Empatia", "Colaboração", "Criatividade"],
+    "experiencias": [
+      {
+        "empresa": "Design Inc.",
+        "cargo": "UI Designer Pleno",
+        "inicio": "2021-06",
+        "fim": "Atual",
+        "descricao": "Design de interfaces para apps móveis."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Design Digital",
+        "instituicao": "Universidade X",
+        "ano": 2020
+      }
+    ],
+    "projetos": [],
+    "certificacoes": [],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["Acessibilidade", "Design Systems"]
+  },
+  {
+    "id": 3,
+    "nome": "Carlos Pereira",
+    "foto": "https://i.pravatar.cc/150?img=68",
+    "cargo": "Engenheiro de Dados",
+    "resumo": "Apaixonado por dados e machine learning.",
+    "localizacao": "São Paulo/SP",
+    "area": "Dados",
+    "habilidadesTecnicas": ["Python", "SQL", "Spark", "Airflow"],
+    "softSkills": ["Pensamento Analítico", "Atenção aos Detalhes"],
+    "experiencias": [
+      {
+        "empresa": "Data Corp",
+        "cargo": "Analista de Dados",
+        "inicio": "2023-01",
+        "fim": "Atual",
+        "descricao": "Criação de pipelines de dados."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Ciência da Computação",
+        "instituicao": "USP",
+        "ano": 2022
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Google Data Analytics"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areaInteresses": ["Machine Learning", "Big Data"]
+  }
+]
