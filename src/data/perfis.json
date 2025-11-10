@@ -94,7 +94,7 @@
   },
   {
     "id": 4,
-    "nome": "Juliana Paes",
+    "nome": "Juliano Paes",
     "foto": "https://i.pravatar.cc/150?img=4",
     "cargo": "Gerente de Produto",
     "resumo": "Conectando necessidades de usuários com objetivos de negócio.",
@@ -126,7 +126,7 @@
   {
     "id": 5,
     "nome": "Ricardo Almeida",
-    "foto": "https://i.pravatar.cc/150?img=5",
+    "foto": "https://i.pravatar.cc/150?img=6 ",
     "cargo": "Desenvolvedor Front-End Júnior",
     "resumo": "Entusiasta de interfaces reativas e performance web.",
     "localizacao": "São Paulo/SP",
@@ -157,7 +157,7 @@
   {
     "id": 6,
     "nome": "Fernanda Lima",
-    "foto": "https://i.pravatar.cc/150?img=6",
+    "foto": "https://i.pravatar.cc/150?img=5",
     "cargo": "Tech Recruiter",
     "resumo": "Conectando talentos de tecnologia com oportunidades.",
     "localizacao": "Recife/PE",
@@ -219,7 +219,7 @@
   {
     "id": 8,
     "nome": "Amanda Costa",
-    "foto": "https://i.pravatar.cc/150?img=8",
+    "foto": "https://i.pravatar.cc/150?img=9",
     "cargo": "UI Designer",
     "resumo": "Transformando ideias complexas em interfaces bonitas e usáveis.",
     "localizacao": "São Paulo/SP",
@@ -250,7 +250,7 @@
   {
     "id": 9,
     "nome": "Gabriel Alves",
-    "foto": "https://i.pravatar.cc/150?img=9",
+    "foto": "https://i.pravatar.cc/150?img=8",
     "cargo": "Cientista de Dados",
     "resumo": "Usando Machine Learning para gerar insights de negócio.",
     "localizacao": "Campinas/SP",
@@ -342,7 +342,7 @@
   },
   {
     "id": 12,
-    "nome": "Patrícia Ribeiro",
+    "nome": "Patrick Ribeiro",
     "foto": "https://i.pravatar.cc/150?img=12",
     "cargo": "People Analytics Specialist",
     "resumo": "Usando dados para melhorar a experiência dos colaboradores.",
@@ -404,7 +404,7 @@
   },
   {
     "id": 14,
-    "nome": "Larissa Mendes",
+    "nome": "Gabriel Mendes",
     "foto": "https://i.pravatar.cc/150?img=14",
     "cargo": "UX Researcher",
     "resumo": "Voz do usuário dentro da estratégia de produto.",
@@ -528,7 +528,7 @@
   },
   {
     "id": 18,
-    "nome": "Vanessa Rodrigues",
+    "nome": "Vando Rodrigues",
     "foto": "https://i.pravatar.cc/150?img=18",
     "cargo": "Business Partner de RH",
     "resumo": "Parceira estratégica de RH para áreas de tecnologia.",
@@ -559,7 +559,7 @@
   },
   {
     "id": 19,
-    "nome": "André Souza",
+    "nome": "Andressa Souza",
     "foto": "https://i.pravatar.cc/150?img=19",
     "cargo": "Engenheiro de DevOps",
     "resumo": "Automatizando infraestrutura e pipelines de CI/CD.",
@@ -621,7 +621,7 @@
   },
   {
     "id": 21,
-    "nome": "Vinicius Lima",
+    "nome": "Luisa Lima",
     "foto": "https://i.pravatar.cc/150?img=21",
     "cargo": "Analista de Marketing Digital",
     "resumo": "Focado em performance e aquisição de usuários (SEO/SEM).",
@@ -683,7 +683,7 @@
   },
   {
     "id": 23,
-    "nome": "Rodrigo Bastos",
+    "nome": "Liz Bastos",
     "foto": "https://i.pravatar.cc/150?img=23",
     "cargo": "Analista de Segurança da Informação",
     "resumo": "Protegendo ativos digitais e garantindo a conformidade (LGPD).",
@@ -714,7 +714,7 @@
   },
   {
     "id": 24,
-    "nome": "Diego Novais",
+    "nome": "Daniela Novais",
     "foto": "https://i.pravatar.cc/150?img=24",
     "cargo": "Product Owner",
     "resumo": "Maximizando o valor do produto e gerenciando o backlog.",
@@ -776,7 +776,7 @@
   },
   {
     "id": 26,
-    "nome": "Marcos Andrade",
+    "nome": "Maria Andrade",
     "foto": "https://i.pravatar.cc/150?img=26",
     "cargo": "Arquiteto de Soluções Cloud",
     "resumo": "Desenhando arquiteturas escaláveis, resilientes e custo-efetivas na nuvem.",
@@ -838,7 +838,7 @@
   },
   {
     "id": 28,
-    "nome": "Otávio Lemos",
+    "nome": "Olivia Lemos",
     "foto": "https://i.pravatar.cc/150?img=28",
     "cargo": "Engenheiro de Machine Learning",
     "resumo": "Implementando modelos de ML em produção.",
@@ -900,7 +900,7 @@
   },
   {
     "id": 30,
-    "nome": "Igor Nascimento",
+    "nome": "Misa Nascimento",
     "foto": "https://i.pravatar.cc/150?img=30",
     "cargo": "Analista de Customer Success",
     "resumo": "Garantindo o sucesso e a retenção de clientes B2B.",
@@ -962,7 +962,7 @@
   },
   {
     "id": 32,
-    "nome": "Roberto Dias",
+    "nome": "Roberta Dias",
     "foto": "https://i.pravatar.cc/150?img=32",
     "cargo": "Tech Lead",
     "resumo": "Líder técnico com background em Java/Spring, focado em mentoria.",
@@ -993,7 +993,7 @@
   },
   {
     "id": 33,
-    "nome": "Isabela Martins",
+    "nome": "Lucas Martins",
     "foto": "https://i.pravatar.cc/150?img=33",
     "cargo": "Ilustradora & Motion Designer",
     "resumo": "Dando vida a marcas e produtos com ilustração e movimento.",
@@ -1024,7 +1024,7 @@
   },
   {
     "id": 34,
-    "nome": "Leonardo Guerra",
+    "nome": "Leonarda Guerra",
     "foto": "https://i.pravatar.cc/150?img=34",
     "cargo": "Analista de BI Sênior",
     "resumo": "Especialista em Power BI e modelagem de dados (Kimball).",
@@ -1086,7 +1086,7 @@
   },
   {
     "id": 36,
-    "nome": "Victor Hugo",
+    "nome": "Isa Hugo",
     "foto": "https://i.pravatar.cc/150?img=36",
     "cargo": "Especialista em Remuneração e Benefícios",
     "resumo": "Desenhando pacotes de compensação competitivos e justos.",
@@ -1117,7 +1117,7 @@
   },
   {
     "id": 37,
-    "nome": "Caio Santana",
+    "nome": "Emily Santana",
     "foto": "https://i.pravatar.cc/150?img=37",
     "cargo": "Desenvolvedor Front-End (Vue.js)",
     "resumo": "Especialista em Vue.js e Nuxt.js para SPAs e SSG.",
@@ -1179,7 +1179,7 @@
   },
   {
     "id": 39,
-    "nome": "Eduardo Rocha",
+    "nome": "Eduarda Rocha",
     "foto": "https://i.pravatar.cc/150?img=39",
     "cargo": "Analista de Dados Júnior",
     "resumo": "Transformando dados em informação com SQL e Python.",
@@ -1241,7 +1241,7 @@
   },
   {
     "id": 41,
-    "nome": "Gustavo Oliveira",
+    "nome": "Camilla Oliveira",
     "foto": "https://i.pravatar.cc/150?img=41",
     "cargo": "Desenvolvedor Back-End (Go)",
     "resumo": "Focado em alta performance e concorrência com Golang.",
@@ -1303,7 +1303,7 @@
   },
   {
     "id": 43,
-    "nome": "Fábio Monteiro",
+    "nome": "Fábia Monteiro",
     "foto": "https://i.pravatar.cc/150?img=43",
     "cargo": "Desenvolvedor Mobile (Flutter)",
     "resumo": "Desenvolvendo apps cross-platform com Flutter e Dart.",
@@ -1365,7 +1365,7 @@
   },
   {
     "id": 45,
-    "nome": "Marcelo Pires",
+    "nome": "Marcela Pires",
     "foto": "https://i.pravatar.cc/150?img=45",
     "cargo": "Engenheiro de Analytics",
     "resumo": "Construindo a ponte entre dados brutos e Business Intelligence.",
@@ -1427,7 +1427,7 @@
   },
   {
     "id": 47,
-    "nome": "Renato Augusto",
+    "nome": "Renata Augusto",
     "foto": "https://i.pravatar.cc/150?img=47",
     "cargo": "Desenvolvedor .NET Sênior",
     "resumo": "Especialista em C# e ecossistema .NET Core para aplicações B2B.",
@@ -1489,7 +1489,7 @@
   },
   {
     "id": 49,
-    "nome": "Davi Moreira",
+    "nome": "Lisa Moreira",
     "foto": "https://i.pravatar.cc/150?img=49",
     "cargo": "Desenvolvedor de Jogos (Unity)",
     "resumo": "Programador de gameplay com C# e Unity.",
@@ -1520,7 +1520,7 @@
   },
   {
     "id": 50,
-    "nome": "Manuela Pinto",
+    "nome": "Davi Pinto",
     "foto": "https://i.pravatar.cc/150?img=50",
     "cargo": "Design Operations (DesignOps)",
     "resumo": "Otimizando processos e ferramentas para escalar equipes de design.",
@@ -1582,7 +1582,7 @@
   },
   {
     "id": 52,
-    "nome": "Alice Braga",
+    "nome": "Manuel Braga",
     "foto": "https://i.pravatar.cc/150?img=52",
     "cargo": "Data Product Manager",
     "resumo": "Gerenciando produtos de dados, de dashboards a modelos de ML.",
@@ -1644,7 +1644,7 @@
   },
   {
     "id": 54,
-    "nome": "Talita Neves",
+    "nome": "Thiago Neves",
     "foto": "https://i.pravatar.cc/150?img=54",
     "cargo": "Coordenadora de RH (Generalista)",
     "resumo": "Gestão generalista de RH, de R&S a T&D e DP.",
@@ -1706,7 +1706,7 @@
   },
   {
     "id": 56,
-    "nome": "Yasmin Ferreira",
+    "nome": "Bryan Ferreira",
     "foto": "https://i.pravatar.cc/150?img=56",
     "cargo": "Product Designer Júnior",
     "resumo": "Iniciando em design de produto, com paixão por UI.",
@@ -1768,7 +1768,7 @@
   },
   {
     "id": 58,
-    "nome": "Carolina Dieckmann",
+    "nome": "João  Dieckmann",
     "foto": "https://i.pravatar.cc/150?img=58",
     "cargo": "Head de Produto",
     "resumo": "Liderando a estratégia de produto e o time de PMs.",
@@ -1830,7 +1830,7 @@
   },
   {
     "id": 60,
-    "nome": "Michele Obama",
+    "nome": "Matheus Obama",
     "foto": "https://i.pravatar.cc/150?img=60",
     "cargo": "Coordenadora de Customer Experience (CX)",
     "resumo": "Mapeando a jornada do cliente e otimizando pontos de contato.",
