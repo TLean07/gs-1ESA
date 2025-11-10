@@ -3,11 +3,11 @@
     "id": 1,
     "nome": "Leandro Junior",
     "foto": "https://github.com/TLean07.png",
-    "cargo": "Engenheiro de Software",
-    "resumo": "Especialista em React, Node.js e soluções de nuvem.",
+    "cargo": "Estudante de Engenheira de Software",
+    "resumo": "Especialista em FullStack com foco principal em Java e Kotlin",
     "localizacao": "São Paulo/SP",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["Java", "MongoDB", "Node.js", "AWS","React","JavaScript","TypeScript","Firebase","Python"],
+    "habilidadesTecnicas": ["Java", "MongoDB", "Kotlin", "Node.js","React","JavaScript","TypeScript","Firebase","Python"],
     "softSkills": ["Comunicação", "Liderança", "Resolução de Problemas"],
     "experiencias": [
       {
@@ -32,65 +32,65 @@
   },
   {
     "id": 2,
-    "nome": "Carla Moreira",
-    "foto": "https://i.pravatar.cc/150?img=2",
-    "cargo": "Product Designer Lead",
-    "resumo": "Apaixonada por criar experiências de usuário fluidas e acessíveis.",
-    "localizacao": "Curitiba/PR",
-    "area": "Design",
-    "habilidadesTecnicas": ["Figma", "Design Systems", "User Research", "UX Writing"],
-    "softSkills": ["Empatia", "Colaboração", "Pensamento Crítico"],
+    "nome": "Guilherme Barone",
+    "foto": "https://github.com/GuilhermeBM3012.png",
+    "cargo": "Estudante de Engenheira de Software",
+    "resumo": "",
+    "localizacao": "São Paulo/SP",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["Python", "Node.js", "JavaScript"],
+    "softSkills": ["Comunicação", "Liderança", "Resolução de Problemas"],
     "experiencias": [
       {
-        "empresa": "UXPro",
-        "cargo": "Lead Designer",
-        "inicio": "2021-05",
-        "fim": "Atual",
-        "descricao": "Gestão da equipe de design e estratégia de produto."
+        "empresa": "N/A",
+        "cargo": "N/A",
+        "inicio": "N/A",
+        "fim": "N/A",
+        "descricao": "N/A"
       }
     ],
     "formacao": [
       {
-        "curso": "Design Digital",
-        "instituicao": "PUC-PR",
-        "ano": 2019
+        "curso": "Engenharia de Software",
+        "instituicao": "FIAP",
+        "ano": 2028
       }
     ],
     "projetos": [],
-    "certificacoes": ["Certified UX Professional (CUXP)"],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
-    "areaInteresses": ["Acessibilidade", "Design Ético"]
+    "certificacoes": ["N/A"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" },{ "idioma": "Português", "nivel": "Fluente" }],
+    "areaInteresses": ["N/A"]
   },
   {
     "id": 3,
-    "nome": "Bruno Viana",
-    "foto": "https://i.pravatar.cc/150?img=3",
-    "cargo": "Engenheiro de Dados Pleno",
-    "resumo": "Construindo pipelines de dados robustos e escaláveis.",
-    "localizacao": "Rio de Janeiro/RJ",
-    "area": "Dados",
-    "habilidadesTecnicas": ["Python", "SQL", "Spark", "Airflow", "GCP"],
-    "softSkills": ["Pensamento Analítico", "Atenção aos Detalhes", "Proatividade"],
+    "nome": "Luigi Escudero",
+    "foto": "https://github.com/Lueg2007.png",
+    "cargo": "Estudante de Engenheira de Software",
+    "resumo": "",
+    "localizacao": "São Paulo/SP",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["Python", "Node.js", "JavaScript"],
+    "softSkills": ["N/A"],
     "experiencias": [
       {
-        "empresa": "DataFlow",
-        "cargo": "Engenheiro de Dados",
-        "inicio": "2022-08",
-        "fim": "Atual",
-        "descricao": "Modelagem e otimização de data warehouses."
+        "empresa": "N/A",
+        "cargo": "N/A",
+        "inicio": "N/A",
+        "fim": "N/A",
+        "descricao": "N/A"
       }
     ],
     "formacao": [
       {
-        "curso": "Ciência da Computação",
-        "instituicao": "UFRJ",
-        "ano": 2021
+        "curso": "Engenharia de Software",
+        "instituicao": "FIAP",
+        "ano": 2028
       }
     ],
     "projetos": [],
-    "certificacoes": ["Google Cloud Certified - Data Engineer"],
-    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
-    "areaInteresses": ["Machine Learning", "Big Data"]
+    "certificacoes": ["N/A"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" },{ "idioma": "Português", "nivel": "Fluente" }],
+    "areaInteresses": ["N/A"]
   },
   {
     "id": 4,
