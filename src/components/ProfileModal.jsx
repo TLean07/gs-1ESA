@@ -6,7 +6,9 @@ import {
   BriefcaseIcon,
   CodeBracketIcon,
   SparklesIcon,
-  AcademicCapIcon
+  AcademicCapIcon,
+  LanguageIcon, // Adicionado
+  LightBulbIcon // Adicionado
 } from '@heroicons/react/24/outline';
 
 const backdropVariants = {
@@ -93,6 +95,21 @@ export function ProfileModal({ perfil, onClose }) {
               </div>
             ))}
           </Section>
+
+
+          <Section title="Idiomas" icon={<LanguageIcon className="w-5 h-5" />}>
+            {perfil.idiomas.map((lang, index) => (
+              <div key={index} className="mt-2 pl-4 border-l-2 border-gray-300 dark:border-gray-600">
+                <p className="font-bold text-gray-800 dark:text-gray-100">{lang.idioma}</p>
+                <p className="text-gray-600 dark:text-gray-400">{lang.nivel}</p>
+              </div>
+            ))}
+          </Section>
+
+          <Section title="Áreas de Interesse" icon={<LightBulbIcon className="w-5 h-5" />}>
+            <TagList items={perfil.areaInteresses} color="gray" />
+          </Section>
+
         </div>
 
         <div className="p-6 sticky bottom-0 bg-gray-50 dark:bg-gray-900 border-t dark:border-gray-700 flex flex-col sm:flex-row gap-3">
