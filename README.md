@@ -92,7 +92,7 @@ Para rodar o projeto localmente, siga os passos abaixo.
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [URL_DO_SEU_REPOSITORIO_GIT]
+    https://github.com/TLean07/gs-1ESA.git
     cd gs-futuro-trabalho
     ```
 
