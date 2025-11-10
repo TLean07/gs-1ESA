@@ -1,120 +1,115 @@
-import { useState, useEffect } from 'react'
-import perfisData from './data/perfis.json'
-import { ProfileCard } from './components/ProfileCard'
-import { ProfileModal } from './components/ProfileModal'
+import { useState, useEffect, useMemo } from 'react';
+import perfisData from './data/perfis.json';
+import { ProfileCard } from './components/ProfileCard';
+import { ProfileModal } from './components/ProfileModal';
+import { Header } from './components/Header';
+import { SearchBar } from './components/SearchBar';
+import { motion, AnimatePresence } from 'framer-motion';
 
 function App() {
-  const [perfis, setPerfis] = useState(perfisData)
-  const [selectedPerfil, setSelectedPerfil] = useState(null)
+  const [selectedPerfil, setSelectedPerfil] = useState(null);
   
-  const [searchTerm, setSearchTerm] = useState("")
-  const [filtroArea, setFiltroArea] = useState("")
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filtroArea, setFiltroArea] = useState("");
+  const [filtroLocal, setFiltroLocal] = useState("");
   
-  const [isDarkMode, setIsDarkMode] = useState(false)
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    const root = window.document.documentElement
-    if (isDarkMode) {
-      root.classList.add('dark')
-    } else {
-      root.classList.remove('dark')
-    }
-  }, [isDarkMode])
+    const root = window.document.documentElement;
+    root.classList.toggle('dark', isDarkMode);
+  }, [isDarkMode]);
 
   const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode)
-  }
+    setIsDarkMode(!isDarkMode);
+  };
 
-  const perfisFiltrados = perfis
-    .filter(perfil => {
-      const nomeCargo = `${perfil.nome} ${perfil.cargo}`.toLowerCase()
-      const habilidades = perfil.habilidadesTecnicas.join(' ').toLowerCase()
-      const busca = searchTerm.toLowerCase()
-      
-      return (nomeCargo.includes(busca) || habilidades.includes(busca))
-    })
-    .filter(perfil => {
-      if (!filtroArea) return true
-      return perfil.area === filtroArea
-    })
+  const perfisFiltrados = useMemo(() => {
+    return perfisData
+      .filter(perfil => {
+        const busca = searchTerm.toLowerCase();
+        const nomeCargo = `${perfil.nome} ${perfil.cargo}`.toLowerCase();
+        const habilidades = perfil.habilidadesTecnicas.join(' ').toLowerCase();
+        
+        return (nomeCargo.includes(busca) || habilidades.includes(busca));
+      })
+      .filter(perfil => {
+        return filtroArea ? perfil.area === filtroArea : true;
+      })
+      .filter(perfil => {
+        return filtroLocal ? perfil.localizacao.toLowerCase().includes(filtroLocal.toLowerCase()) : true;
+      });
+  }, [searchTerm, filtroArea, filtroLocal]);
 
-  const areasUnicas = [...new Set(perfisData.map(p => p.area))]
-
-  const handleCardClick = (perfil) => {
-    setSelectedPerfil(perfil)
-  }
-
-  const handleCloseModal = () => {
-    setSelectedPerfil(null)
-  }
+  const areasUnicas = useMemo(() => [...new Set(perfisData.map(p => p.area).sort())], []);
+  
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.05,
+      },
+    },
+  };
 
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
       
-      <header className="bg-white dark:bg-gray-800 shadow-md p-4 sticky top-0 z-10">
-        <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
-          <h1 className="text-3xl font-bold text-blue-600 dark:text-blue-400">
-            GS | Futuro do Trabalho
-          </h1>
-          
-          <div className="flex items-center gap-4">
-            <button onClick={toggleDarkMode} className="p-2 rounded-full bg-gray-200 dark:bg-gray-700">
-              {isDarkMode ? '☀️' : '🌙'}
-            </button>
-          </div>
-        </div>
-      </header>
+      <Header onToggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
 
-      <main className="container mx-auto p-6">
+      <main className="container mx-auto p-4 sm:p-6">
         
-        <div className="mb-8 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold mb-4">Encontre Talentos</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <input
-              type="text"
-              placeholder="Buscar por nome, cargo, tecnologia..."
-              className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-            <select
-              className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              value={filtroArea}
-              onChange={(e) => setFiltroArea(e.target.value)}
-            >
-              <option value="">Todas as Áreas</option>
-              {areasUnicas.map(area => (
-                <option key={area} value={area}>{area}</option>
-              ))}
-            </select>
-          </div>
-        </div>
+        <SearchBar
+          searchTerm={searchTerm}
+          onSearchChange={(e) => setSearchTerm(e.target.value)}
+          filtroArea={filtroArea}
+          onAreaChange={(e) => setFiltroArea(e.target.value)}
+          filtroLocal={filtroLocal}
+          onLocalChange={(e) => setFiltroLocal(e.target.value)}
+          areas={areasUnicas}
+        />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+        >
           {perfisFiltrados.map((perfil) => (
             <ProfileCard
               key={perfil.id}
               perfil={perfil}
-              onClick={() => handleCardClick(perfil)}
+              onClick={() => setSelectedPerfil(perfil)}
             />
           ))}
-        </div>
+        </motion.div>
         
         {perfisFiltrados.length === 0 && (
-          <p className="text-center text-xl text-gray-500 mt-10">
-            Nenhum perfil encontrado.
-          </p>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center text-xl text-gray-500 mt-16"
+          >
+            <p className="text-2xl mb-2">🤔</p>
+            <p>Nenhum perfil encontrado.</p>
+            <p className="text-base">Tente ajustar seus filtros.</p>
+          </motion.div>
         )}
 
       </main>
 
-      <ProfileModal
-        perfil={selectedPerfil}
-        onClose={handleCloseModal}
-      />
+      <AnimatePresence>
+        {selectedPerfil && (
+          <ProfileModal
+            perfil={selectedPerfil}
+            onClose={() => setSelectedPerfil(null)}
+          />
+        )}
+      </AnimatePresence>
       
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
