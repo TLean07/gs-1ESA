@@ -7,7 +7,7 @@
     "resumo": "Especialista em React, Node.js e soluções de nuvem.",
     "localizacao": "São Paulo/SP",
     "area": "Desenvolvimento",
-    "habilidadesTecnicas": ["React", "TypeScript", "Node.js", "AWS","Java","JavaScript","MongoDB","Firebase","Python"],
+    "habilidadesTecnicas": ["Java", "MongoDB", "Node.js", "AWS","React","JavaScript","TypeScript","Firebase","Python"],
     "softSkills": ["Comunicação", "Liderança", "Resolução de Problemas"],
     "experiencias": [
       {
